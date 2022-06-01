@@ -27,8 +27,8 @@ for row in rating:
 ratings.insert(0,'N/A')#ratings not available for the first item
 
 #output the data form of a csv file
-df = pd.DataFrame({'Product Name':products,'price':prices,'Rating':ratings})
-df.to_csv('Products.csv', index=False, encoding='utf-8')
+data = pd.DataFrame({'Product Name':products,'price':prices,'Rating':ratings})
+data.to_csv('Products.csv', index=False, encoding='utf-8')
 
 print(df)
 
