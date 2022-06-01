@@ -24,12 +24,13 @@ rating = soup.find_all("div", attrs={'class': '_3LWZlK'})
 for row in rating:
     z = row.text
     ratings.append(z)
-ratings.insert(0,'N/A')#ratings not available for the first item
+#(use it in case if there was no rating of the product is available
+# #ratings.insert(0,'N/A') 
 
 #output the data form of a csv file
 data = pd.DataFrame({'Product Name':products,'price':prices,'Rating':ratings})
 data.to_csv('Products.csv', index=False, encoding='utf-8')
 
-print(df)
+print(data)
 
 
