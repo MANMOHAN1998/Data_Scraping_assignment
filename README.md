@@ -1,2 +1,2 @@
 # Data_Scraping_assignment
-scraping data from flipcart.
+scraping data from flipkart.
